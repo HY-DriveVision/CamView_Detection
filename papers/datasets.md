@@ -40,7 +40,7 @@
 |용량|4.19TB|
 |데이터 형식|png (camera), pcd (lidar, radar)|
 |데이터 수량|동적 객체 학습데이터 각 센서(카메라, LiDAR, 레이다)별 100만장 이상|
-|어노테이션|*파일 유형 : txt, json<br>* 라벨링 유형 : 3D, 2D bounding box|
+|어노테이션|* 파일 유형 : txt, json<br>* 라벨링 유형 : 3D, 2D bounding box|
 |객체 종류|승용차, 버스, 트럭, 오토바이, 보행자, 특수목적차량, 자전거|
 |객체 속성|기상 상황, 시간대|
 |특징|라이다, 레이더가 있고 카메라 정보도 모두 있어서 캘리브레이션 및 3D detecetion 학습도 가능할듯|
@@ -61,8 +61,8 @@
 |용량|295.16 GB|
 |데이터 형식|jpg (camera), pcd (lidar)|
 |데이터 수량|카메라 이미지, 라이다, 라벨링 셋 각각 16만장|
-|어노테이션|2D segmentation, 2D/3D bounding box|
-|객체 종류|* 바운딩박스 객체 : pedestrian, trafficLight, trafficSign, twoWheeler, vehicle<br><br>* 새그맨테이션 객체 : ambulance, background, bicycle, lueLane, bus, constructionGuide, crossWalk, curb, eogVehicle, fense, freespace, motorcycle, otherCar, pedestrian, policeCar, redLane, rider, roadMark, rubberCone, safetyZone, schoolBus, sideWalk, speedBump, stopLane, trafficDrum, trafficLight, trafficSign,  truck, twoWheeler, vehicle, warningTriangle, whiteLane, yellowLane|
+|어노테이션|* 파일 유형 : json<br>* 라벨링 유형 : 2D segmentation, 2D/3D bounding box|
+|객체 종류|* 2D/3D 바운딩박스 객체 : pedestrian, trafficLight, trafficSign, twoWheeler, vehicle<br>* 2D 새그맨테이션 객체 : ambulance, background, bicycle, lueLane, bus, constructionGuide, crossWalk, curb, eogVehicle, fense, freespace, motorcycle, otherCar, pedestrian, policeCar, redLane, rider, roadMark, rubberCone, safetyZone, schoolBus, sideWalk, speedBump, stopLane, trafficDrum, trafficLight, trafficSign,  truck, twoWheeler, vehicle, warningTriangle, whiteLane, yellowLane|
 |객체 속성|날씨, 날짜, 시간대, 수집차량 종류, 교통량, 차량 속도, 차선 폭|
 |특징|카메라 이미지가 5방향으로 수집되어 있음<br>카메라 프로젝션 정보도 제공됨<br>2d/3d bbox가 함께 제공됨<br>라이다의 품질이 좋지는 않아 보임|
 
