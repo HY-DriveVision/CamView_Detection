@@ -87,3 +87,31 @@
 |특징|비교적 가까이에 있는 데이터만 라벨링 되어있음<br>객체 종류가 굉장히 다양함|
 
 <hr>
+
+### 5. Waymo-open-dataset
+
+* Waymo에서 제공하는 machine perception과 autonomous driving을 위한 Open Dataset.
+* https://waymo.com/open
+
+* Perception Dataset.
+
+| Type | Name |
+| --- | --- |
+| Sensor Data | Lidar Data |
+| Sensor Data | Camera Data |
+| Maps | Maps |
+| Format | Modular Dataset |
+| Format | Object Assets |
+| Labels | 3D Bounding Boxes |
+| Labels | 2D Bounding Boxes |
+| Labels | Key Points |
+| Labels | 2D-to-3D Correspondence |
+| Labels | 3D Semantic Segmentation |
+| Labels | 2D Video Panoptic Segmentation |
+
+
+#### [2D Video Panoptic Segmentation](https://waymo.com/open/data/perception/#2d-video-panoptic-segmentation)
+
+* 100k camera images
+* 28 fine-grained categories: Car, Bus, Truck, Other Large Vehicle, Trailer, Ego Vehicle, Motorcycle, Bicycle, Pedestrian, Cyclist, Motorcyclist, Ground Animal, Bird, Pole, Sign, Traffic Light, Construction Cone, Pedestrian Object, Building, Road, Sidewalk, Road Marker, Lane Marker, Vegetation, Sky, Ground, Static, Dynamic
+* Instance segmentation labels are provided for the Vehicle, Pedestrian and Cyclist classes
