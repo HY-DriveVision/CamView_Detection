@@ -10,21 +10,21 @@ Facebook AI
 
 ## The DETR Model
 
-* Object detection set prediciton loss
+* Object detection set prediction loss
 
 DETR 고정된 N predictions를 추론.
 N은 한 이미지안에 들어갈 수 있는 전형적인 Object 수 보다 크게 설정.
 Hungarian Loss를 사용하여 결과와 매칭
 
-$\hat{\sigma}=\underset{\sigma\in\mathfrak{S}_N}\argmin\displaystyle\sum_i^NL_{match}(y_i,\hat{y}_{\sigma(i)})$
+$`\hat{\sigma}=\underset{\sigma\in\mathfrak{S}_N}{\arg\min}\displaystyle\sum_i^NL_{match}(y_i,\hat{y}_{\sigma(i)})`$
 
 
 
-$L_{match}(y_i,\hat{y}_{\sigma(i)}) = -\mathbb{1}_{\{c_i\ne\emptyset\}}\hat{p}_{\sigma(i)}(c_i)+\mathbb{1}_{\{c_i\ne\emptyset\}}L_{box}(b_i,\hat{b}_{\sigma(i)})$
+$`L_{match}(y_i,\hat{y}_{\sigma(i)}) = -\mathbb{1}_{\{c_i\ne\emptyset\}}\hat{p}_{\sigma(i)}(c_i)+\mathbb{1}_{\{c_i\ne\emptyset\}}L_{box}(b_i,\hat{b}_{\sigma(i)})`$
 
 
 
-$L_{hungarian}(y, \hat{y})=\displaystyle\sum_{i=1}^{N}[-log\hat{p}_{\hat{\sigma}(i)}(c_i)+1_{\{c_i\ne{\emptyset}\}}L_{box}(b_i,\hat{b}_{\hat{\sigma}}(i))]$
+$`L_{hungarian}(y, \hat{y})=\displaystyle\sum_{i=1}^{N}[-log\hat{p}_{\hat{\sigma}(i)}(c_i)+1_{\{c_i\ne{\emptyset}\}}L_{box}(b_i,\hat{b}_{\hat{\sigma}}(i))]`$
 
 
 
